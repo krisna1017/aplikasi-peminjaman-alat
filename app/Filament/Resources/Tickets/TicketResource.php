@@ -20,7 +20,8 @@ class TicketResource extends Resource
 {
     protected static ?string $model = Ticket::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedTicket;
+    protected static string|BackedEnum|null $activeNavigationIcon = Heroicon::Ticket;
 
     protected static ?string $recordTitleAttribute = 'id';
 
