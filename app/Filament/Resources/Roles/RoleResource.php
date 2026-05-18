@@ -42,12 +42,10 @@ class RoleResource extends Resource
     use HasShieldFormComponents;
 
     protected static ?string $recordTitleAttribute = 'name';
-
     protected static ?int $navigationSort = 2;
 
     protected static string|BackedEnum|null $navigationIcon = "heroicon-o-shield-check";
     protected static string|BackedEnum|null $activeNavigationIcon = "heroicon-s-shield-check";
-
     protected static string|UnitEnum|null $navigationGroup = "User Management";
 
     #[Override]
